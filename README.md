@@ -28,3 +28,6 @@ If you experience any errors, bugs or issues, please submit a detailed issue rep
 1. [Django Project](https://www.djangoproject.com/)
 2. [Wikipedia - GEDCOM](https://en.wikipedia.org/wiki/GEDCOM)
 3. [Wikipedia - Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil)
+
+## Legal
+Yggdrasil is licensed under GNU General Public License v3.0. For more information, please refer to the LICENSE file.
