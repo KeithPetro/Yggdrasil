@@ -24,6 +24,9 @@ If you experience any errors, bugs or issues, please submit a detailed issue rep
 * Any program logs
 * Screenshots of the issue
 
+## Acknowledgements
+* For parsing of GEDCOM files we are using Nicklas Reincke's version of [python-gedcom](https://github.com/nickreynke/python-gedcom).
+
 ## Sources
 1. [Django Project](https://www.djangoproject.com/)
 2. [Wikipedia - GEDCOM](https://en.wikipedia.org/wiki/GEDCOM)
