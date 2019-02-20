@@ -7,7 +7,6 @@ def getGedcom(path):
     
     #Iterate over all files in the sample-gedcom folder
     for gedcom_filename in os.listdir(path):
-        print(gedcom_filename)
         file_path = path + gedcom_filename
         #Create Gedcom instance at path file_path and with strict parsing off
         gedcom = Gedcom(file_path, False)

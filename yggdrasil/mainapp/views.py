@@ -4,4 +4,5 @@ from testscripts.get_gedcom import getGedcom
 import os
 
 def home(request):
-    return HttpResponse(getGedcom("./samplegedcom/"))
+    test_gedcom = getGedcom("./samplegedcom/").replace("\n", "<br>")
+    return render(request, 'gedcom_test_page.html', {'test_gedcom': test_gedcom})
