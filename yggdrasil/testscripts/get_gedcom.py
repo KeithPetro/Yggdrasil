@@ -19,10 +19,7 @@ def getGedcom(path):
     
         for record in all_records:
             #Check if the record is of a person
-            #if record.is_individual():
-            (first, last) = record.get_name()
-            print(first)
-            outstring += first + " " + last + "\n"
-    
-    print(outstring)
+            if record.is_individual():
+                (first, last) = record.get_name()
+                outstring += first + " " + last + "\n"
     return outstring
