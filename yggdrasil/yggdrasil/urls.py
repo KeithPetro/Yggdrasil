@@ -19,5 +19,5 @@ from mainapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^$', views.home, name='home'),
+    re_path(r'^$', views.gedcom_test_page, name='gedcom_test_page'),
 ]
