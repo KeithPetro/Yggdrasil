@@ -2,15 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Boards</title>
+    <title>GEDCOM Test Page</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   </head>
   <body>
-    <h1>Yggdrasil GEDCOM Test Page</h1>
-    
-    {% autoescape off %}
-    {{test_gedcom}}
-    {% endautoescape %}
-
+    <div class="container">
+      <ol class="breadcrumb my-4">
+        <li class="breadcrumb-item active">GEDCOM Test Page</li>
+      </ol>
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>GEDCOM Files</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%  for individual in individuals %}
+            <tr>
+              <td>
+                {{  individual }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

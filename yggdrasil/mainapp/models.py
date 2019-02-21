@@ -1,5 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
+from picklefield.fields import PickledObjectField
+#------------------------------------------------
+#TODO: Clean up and finalize this model structure
+#------------------------------------------------
 
 class Element(models.Model):
     #Local field(s):
@@ -26,9 +30,11 @@ class Element(models.Model):
     parents = models.ManyToManyField("self")
     children = models.ManyToManyField("self")
 
-class Tree(models.Model):
-    #Local field(s):
-    name = models.CharField(max_length=25)
+class Family(models.Model):
     
-    #One-to-one field(s):
-    root_element = models.OneToOneField(Element, on_delete=models.CASCADE, primary_key=True)
+    # #Local field(s):
+    # name = models.CharField(max_length=25)
+    
+    # #One-to-one field(s):
+    # root_element = models.OneToOneField(Element, on_delete=models.CASCADE, primary_key=True)
+    args = PickledObjectField()
