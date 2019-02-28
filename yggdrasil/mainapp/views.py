@@ -19,4 +19,3 @@ def gedcom_test_page(request):
         individual_names.append(firstname + " " + lastname)
         
     return render(request, 'gedcom_test_page.html', {'individual_names': individual_names})
-    
