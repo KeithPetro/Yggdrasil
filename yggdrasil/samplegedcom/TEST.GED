@@ -1,0 +1,76 @@
+0 HEAD
+1 SOUR FTW
+2 VERS Family Tree Maker 2005 (12.0.345 SP1) August 20, 2004
+2 NAME Family Tree Maker 2005 for Windows
+2 CORP MyFamily.com, Inc.
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTW
+1 DATE 10 JUN 2007
+1 CHAR ANSI
+1 SUBM @SUBM@
+1 FILE C:\Documents and Settings\Home PC\My Documents\FTM\sample1.GED
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+1 _SCHEMA
+2 INDI,br> 3 _FA1
+0 @SUBM@ SUBM
+1 NAME Glen philip Jones
+1 ADDR uk
+0 @I185@ INDI
+1 NAME John Cheetham /Goulson/
+1 SEX M,
+1 BIRT
+2 DATE 1862
+2 PLAC Lincoln, Lincolnshire
+1 FAMS @F1@
+1 NOTE @NI185@
+0 @NI185@ NOTE
+1 CONC Birth Ref 7a 536 Q4 1862 Lincoln,
+1 CONT
+1 CONT Census Images Held
+1 CONT 1871
+1 CONT 1881
+1 CONT 1891
+1 CONT 1901
+1 CONT
+1 CONT The 1909 Kellys directory shows John Cheetham Gouslon, Grocer of 108 Hews
+1 CONC on Road, Lincoln.
+1 CONT The 1919 Kellys Directory shows the private residence of John to be numb
+1 CONC er 22 Hewson Road
+1 CONT
+0 @I253@ INDI
+1 NAME Louisa /Harrison/
+1 SEX F
+1 BIRT
+2 DATE 1856
+2 PLAC Lincoln, Lincolnshire
+1 FAMS @F1@
+0 @I254@ INDI
+1 NAME Edith Mary L /Goulson/
+1 SEX F
+1 BIRT
+2 DATE 1895
+2 PLAC Lincoln, Lincolnshire
+1 FAMC @F1@
+1 NOTE @NI254@
+0 @NI254@ NOTE
+1 CONC Birth Ref
+1 CONT Lincoln vol 7a pg 551 Q1 1895
+0 @F1@ FAM
+1 HUSB @I185@
+1 WIFE @I253@
+1 CHIL @I254@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1890
+2 PLAC Lincoln,Lincolnshire
+1 REFN 8915
+1 NOTE @NF1@
+0 @NF1@ NOTE
+1 CONC Ref
+1 CONT Lincoln 7a 907 Q3 1890
+0 TRLR

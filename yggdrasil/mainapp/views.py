@@ -11,6 +11,7 @@ def gedcom_test_page(request):
     
     getGedcom("./samplegedcom/")
     individuals = Individual.objects.all()
+    
     individual_names = []
     
     for individual in individuals:

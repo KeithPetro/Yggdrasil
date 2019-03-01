@@ -24,5 +24,7 @@ class Individual(models.Model):
 
 class Family(models.Model):
     
+    #Local fields:
+    pointer = models.CharField(max_length=25)
     #Many-to-many field(s):
     members = models.ManyToManyField(Individual, related_name = 'family')

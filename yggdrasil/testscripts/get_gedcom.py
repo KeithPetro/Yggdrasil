@@ -21,40 +21,62 @@ def getGedcom(path):
     
         for record in all_records:
             if record.get_tag() == "FAM":
-                family_members_gedcom = gedcom.get_family_members(record, "ALL")
-                children_model = []
+                family_members_gedcom_p = gedcom.get_family_members(record, "PARENTS")
+                family_members_gedcom_c = gedcom.get_family_members(record, "CHIL")
                 parents_model = []
+                children_model = []
                 
-                (family, created) = Family.objects.get_or_create()
+                (family, created) = Family.objects.get_or_create(pointer=record.get_pointer())
                 
-                for member in family_members_gedcom:
-                    (element, created) = Individual.objects.get_or_create(  firstname = member.get_name()[0],
-                                                                            lastname = member.get_name()[1],
-                                                                            gender = member.get_gender(),
-                                                                            occupation = member.get_occupation(),
-                                                                            is_child = member.is_child(),
-                                                                            is_deceased = member.is_deceased(),
-                                                                            birth_date = member.get_birth_data()[0],
-                                                                            birth_place = member.get_birth_data()[1],
-                                                                            death_date = member.get_death_data()[0],
-                                                                            death_place = member.get_death_data()[1],
-                                                                            burial_date = member.get_burial()[0],
-                                                                            burial_place = member.get_burial()[1],
+                for parent in family_members_gedcom_p:
+                    (element, created) = Individual.objects.get_or_create(  firstname = parent.get_name()[0],
+                                                                            lastname = parent.get_name()[1],
+                                                                            gender = parent.get_gender(),
+                                                                            occupation = parent.get_occupation(),
+                                                                            is_child = parent.is_child(),
+                                                                            is_deceased = parent.is_deceased(),
+                                                                            birth_date = parent.get_birth_data()[0],
+                                                                            birth_place = parent.get_birth_data()[1],
+                                                                            death_date = parent.get_death_data()[0],
+                                                                            death_place = parent.get_death_data()[1],
+                                                                            burial_date = parent.get_burial()[0],
+                                                                            burial_place = parent.get_burial()[1],
                                                                             last_change_date = datetime.date.today(),
-                                                                            marriage_data = json.dumps(gedcom.get_marriages(member))
+                                                                            marriage_data = json.dumps(gedcom.get_marriages(parent)),
                                                                         )
-                    
+                                                                        
                     family.members.add(element)
-                    
-                    if member.is_child == True:
-                        children_model.append(element)
-                    else:
-                        parents_model.append(element)
-                    
+                    element.family.add(family)
+                    parents_model.append(element)
+                
+                for child in family_members_gedcom_c:
+                    (element, created) = Individual.objects.get_or_create(  firstname = child.get_name()[0],
+                                                                            lastname = child.get_name()[1],
+                                                                            gender = child.get_gender(),
+                                                                            occupation = child.get_occupation(),
+                                                                            is_child = child.is_child(),
+                                                                            is_deceased = child.is_deceased(),
+                                                                            birth_date = child.get_birth_data()[0],
+                                                                            birth_place = child.get_birth_data()[1],
+                                                                            death_date = child.get_death_data()[0],
+                                                                            death_place = child.get_death_data()[1],
+                                                                            burial_date = child.get_burial()[0],
+                                                                            burial_place = child.get_burial()[1],
+                                                                            last_change_date = datetime.date.today(),
+                                                                            marriage_data = json.dumps(gedcom.get_marriages(child)),
+                                                                        )
+                                                                        
+                    family.members.add(element)
+                    element.family.add(family)
+                    children_model.append(element)
+                
+                print(children_model)
+                print(parents_model)
+                
                 for child in children_model:
                     for parent in parents_model:
                         child.parents.add(parent)
                 
                 for parent in parents_model:
                     for child in children_model:
-                        parent.parents.add(child)
+                        parent.children.add(child)
