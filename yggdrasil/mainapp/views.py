@@ -6,10 +6,6 @@ from django.conf import settings
 import os
 
 def gedcom_test_page(request):
-    #------------------------------------------------
-    #TODO: Clean up this code when the model stucture is finalized
-    #------------------------------------------------
-    
     importGedcom(settings.GEDCOM_DIR)
     individuals = Individual.objects.all()
     

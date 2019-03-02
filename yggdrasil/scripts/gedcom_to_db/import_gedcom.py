@@ -5,7 +5,6 @@ import datetime
 import os
 
 def importGedcom(path):
-    
     #Iterate over all files in the sample-gedcom folder
     for gedcom_filename in os.listdir(path):
         file_path = path + gedcom_filename
