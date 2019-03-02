@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+<style>
+  #visualization_test{border:1px solid red;}
+</style>
+
+<canvas id="visualization_test" width="1000" height="1000"></canvas>
+
+<script>
+  var canvas = document.getElementById("visualization_test");
+  var ctx = canvas.getContext("2d");
+  
+  ctx.beginPath();
+  ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+  ctx.fillText("test", 100, 100, 200);
+  ctx.stroke();
+</script>
+{%  endblock %}
