@@ -1,5 +1,5 @@
 from gedcom import *
-from mainapp.models import Family, Individual
+from mainapp.models import *
 import json
 import datetime
 import os
@@ -12,17 +12,15 @@ def getGedcom(path):
         #Create Gedcom instance at path file_path and with strict parsing off
         gedcom = Gedcom(file_path, False)
         
-        
-        # gedcom_tree.args = gedcom
-        # gedcom_tree.save()
-        
         #Get all records in the tree
         all_records = gedcom.get_root_child_elements()
     
         for record in all_records:
             if record.get_tag() == "FAM":
                 family_members_gedcom_p = gedcom.get_family_members(record, "PARENTS")
+
                 family_members_gedcom_c = gedcom.get_family_members(record, "CHIL")
+
                 parents_model = []
                 children_model = []
                 
@@ -70,13 +68,12 @@ def getGedcom(path):
                     element.family.add(family)
                     children_model.append(element)
                 
-                print(children_model)
-                print(parents_model)
                 
                 for child in children_model:
                     for parent in parents_model:
-                        child.parents.add(parent)
-                
-                for parent in parents_model:
-                    for child in children_model:
-                        parent.children.add(child)
+                        print("Add " + parent.firstname + "as a parent of " + child.firstname)
+                        (element, created) = Relation.objects.get_or_create(    parent = parent,
+                                                                                child = child
+                                                                            )
+                        child.relations.add(element)
+                        parent.relations.add(element)
