@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from testscripts.get_gedcom import getGedcom
+from scripts.gedcom_to_db.import_gedcom import importGedcom
 from mainapp.models import Family, Individual
+from django.conf import settings
 import os
 
 def gedcom_test_page(request):
@@ -9,7 +10,7 @@ def gedcom_test_page(request):
     #TODO: Clean up this code when the model stucture is finalized
     #------------------------------------------------
     
-    getGedcom("./samplegedcom/")
+    importGedcom(settings.GEDCOM_DIR)
     individuals = Individual.objects.all()
     
     individual_names = []

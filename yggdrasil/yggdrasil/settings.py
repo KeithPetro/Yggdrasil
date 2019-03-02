@@ -128,3 +128,4 @@ STATICFILES_DIRS = [
 
 LOGOUT_REDIRECT_URL = 'gedcom_test_page'
 LOGIN_REDIRECT_URL = 'gedcom_test_page'
+GEDCOM_DIR = "./samplegedcom/"

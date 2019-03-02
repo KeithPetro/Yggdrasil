@@ -4,7 +4,7 @@ import json
 import datetime
 import os
 
-def getGedcom(path):
+def importGedcom(path):
     
     #Iterate over all files in the sample-gedcom folder
     for gedcom_filename in os.listdir(path):
