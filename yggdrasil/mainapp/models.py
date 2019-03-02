@@ -19,10 +19,15 @@ class Individual(models.Model):
     marriage_data = models.CharField(max_length=50)
     
     #Many-to-many field(s):
-    parents = models.ManyToManyField("self")
-    children = models.ManyToManyField("self")
+    relations = models.ManyToManyField("Relation")
+    
+class Relation(models.Model):
+    parent = models.ForeignKey(Individual, on_delete=models.CASCADE, related_name = "parent_accessor")
+    child = models.ForeignKey(Individual, on_delete=models.CASCADE,  related_name = "child_accessor")
 
 class Family(models.Model):
     
+    #Local fields:
+    pointer = models.CharField(max_length=25)
     #Many-to-many field(s):
     members = models.ManyToManyField(Individual, related_name = 'family')
