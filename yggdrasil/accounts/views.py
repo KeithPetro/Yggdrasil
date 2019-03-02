@@ -9,7 +9,7 @@ def signup(request):
         if form.is_valid():
             user = form.save()
             auth_login(request, user)
-            return redirect('home')
+            return redirect('gedcom_test_page')
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})

@@ -71,7 +71,6 @@ def getGedcom(path):
                 
                 for child in children_model:
                     for parent in parents_model:
-                        print("Add " + parent.firstname + "as a parent of " + child.firstname)
                         (element, created) = Relation.objects.get_or_create(    parent = parent,
                                                                                 child = child
                                                                             )
