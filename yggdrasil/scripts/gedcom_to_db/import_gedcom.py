@@ -26,7 +26,8 @@ def importGedcom(path):
                 (family, created) = Family.objects.get_or_create(pointer=record.get_pointer())
                 
                 for parent in family_members_gedcom_p:
-                    (element, created) = Individual.objects.get_or_create(  firstname = parent.get_name()[0],
+                    (element, created) = Individual.objects.get_or_create(  
+                                                                            firstname = parent.get_name()[0],
                                                                             lastname = parent.get_name()[1],
                                                                             gender = parent.get_gender(),
                                                                             occupation = parent.get_occupation(),
@@ -38,8 +39,8 @@ def importGedcom(path):
                                                                             death_place = parent.get_death_data()[1],
                                                                             burial_date = parent.get_burial()[0],
                                                                             burial_place = parent.get_burial()[1],
-                                                                            last_change_date = datetime.date.today(),
                                                                             marriage_data = json.dumps(gedcom.get_marriages(parent)),
+                                                                            defaults = {'last_change_date':datetime.date.today()},
                                                                         )
                                                                         
                     family.members.add(element)
@@ -47,7 +48,8 @@ def importGedcom(path):
                     parents_model.append(element)
                 
                 for child in family_members_gedcom_c:
-                    (element, created) = Individual.objects.get_or_create(  firstname = child.get_name()[0],
+                    (element, created) = Individual.objects.get_or_create(  
+                                                                            firstname = child.get_name()[0],
                                                                             lastname = child.get_name()[1],
                                                                             gender = child.get_gender(),
                                                                             occupation = child.get_occupation(),
@@ -59,8 +61,8 @@ def importGedcom(path):
                                                                             death_place = child.get_death_data()[1],
                                                                             burial_date = child.get_burial()[0],
                                                                             burial_place = child.get_burial()[1],
-                                                                            last_change_date = datetime.date.today(),
                                                                             marriage_data = json.dumps(gedcom.get_marriages(child)),
+                                                                            defaults = {'last_change_date':datetime.date.today()},
                                                                         )
                                                                         
                     family.members.add(element)

@@ -21,7 +21,11 @@ class Individual(models.Model):
     #Many-to-many field(s):
     relations = models.ManyToManyField("Relation")
     
+    def __str__(self):
+        return self.firstname + " " + self.lastname
+    
 class Relation(models.Model):
+    #One-to-many field(s):
     parent = models.ForeignKey(Individual, on_delete=models.CASCADE, related_name = "parent_accessor")
     child = models.ForeignKey(Individual, on_delete=models.CASCADE,  related_name = "child_accessor")
 
@@ -31,3 +35,6 @@ class Family(models.Model):
     
     #Many-to-many field(s):
     members = models.ManyToManyField(Individual, related_name = 'family')
+    
+    def __str__(self):
+        return self.pointer
