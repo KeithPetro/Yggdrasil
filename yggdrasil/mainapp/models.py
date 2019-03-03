@@ -22,7 +22,7 @@ class Individual(models.Model):
     relations = models.ManyToManyField("Relation")
     
     def __str__(self):
-        return 'Individual: ' + self.firstname + " " + self.lastname
+        return self.firstname + " " + self.lastname
     
 class Relation(models.Model):
     #One-to-many field(s):
@@ -37,4 +37,4 @@ class Family(models.Model):
     members = models.ManyToManyField(Individual, related_name = 'family')
     
     def __str__(self):
-        return 'Family: ' + self.pointer
+        return self.pointer
