@@ -11,7 +11,10 @@
     {% block body %}
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'gedcom_test_page' %}">Yggdrasil</a>
+          <!-- Adding logo  -->
+          <a class="navbar-brand" href="{% url 'gedcom_test_page' %}">
+            <img src="{% static 'img/logo.png'  %}" width="40px" height="36px"></img> Yggdrasil
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

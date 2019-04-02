@@ -5,6 +5,7 @@ from scripts.visualization.draw_tree import drawTree
 from mainapp.models import Family, Individual
 from django.conf import settings
 import os
+#from scripts.visualization.plotly_test import Graph
 
 def gedcom_test_page(request):
     importGedcom(settings.GEDCOM_DIR)
@@ -20,6 +21,10 @@ def gedcom_test_page(request):
     return render(request, 'gedcom_test_page.html', {'individual_names': individual_names})
     
 def visualization_test_page(request):
+    #g = Graph()
+    #context = g.get_context_data()
+    
     drawTree()
     
+    #return render(request, 'visualization_test_page.html', context)
     return render(request, 'visualization_test_page.html')
