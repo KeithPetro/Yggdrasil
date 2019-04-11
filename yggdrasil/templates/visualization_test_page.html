@@ -1,23 +1,19 @@
-{% extends 'base.html' %}
+{% extends 'base_vis.html' %}
+
+{% load static %}
 
 {% block stylesheet %}
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/visualization.css' %}">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.1.0/dist/dTree.min.js"></script>
 {% endblock %}
 
 {%  block content %}
-<style>
-  #visualization_test{border:1px solid red;}
-</style>
 
-<canvas id="visualization_test" width="1000" height="1000"></canvas>
+<div id="tree" class="tree"></div>
 
-<script>
-  var canvas = document.getElementById("visualization_test");
-  var ctx = canvas.getContext("2d");
-  
-  ctx.beginPath();
-  ctx.arc(100, 100, 50, 0, 2 * Math.PI);
-  ctx.fillText("test", 100, 100, 200);
-  ctx.stroke();
-</script>
+<script type="text/javascript" src="{% static 'js/generateTree.js' %}"></script>
+
 {%  endblock %}

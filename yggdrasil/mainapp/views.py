@@ -21,10 +21,5 @@ def gedcom_test_page(request):
     return render(request, 'gedcom_test_page.html', {'individual_names': individual_names})
     
 def visualization_test_page(request):
-    #g = Graph()
-    #context = g.get_context_data()
     
-    drawTree()
-    
-    #return render(request, 'visualization_test_page.html', context)
     return render(request, 'visualization_test_page.html')
