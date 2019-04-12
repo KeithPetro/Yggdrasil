@@ -89,12 +89,8 @@ function update(source) {
     // Add labels for the nodes
     nodeEnter.append('text')
         .attr("dy", ".35em")
-        .attr("x", function(d) {
-            return d.children || d._children ? -13 : 13;
-        })
-        .attr("text-anchor", function(d) {
-            return d.children || d._children ? "end" : "start";
-        })
+        .attr("x", "0")
+        .attr("text-anchor", "middle")
         .text(function(d) { return d.data.name; });
 
     // UPDATE
@@ -109,7 +105,7 @@ function update(source) {
 
     // Update the node attributes and style
     nodeUpdate.select('circle.node')
-        .attr('r', 10)
+        .attr('r', 50)
         .style("fill", function(d) {
             return d._children ? "lightsteelblue" : "#fff";
         })
