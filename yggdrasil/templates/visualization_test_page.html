@@ -3,16 +3,12 @@
 {% load static %}
 
 {% block stylesheet %}
-<meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{% static 'css/visualization.css' %}">
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3-dtree@2.1.0/dist/dTree.min.js"></script>
 {% endblock %}
 
 {%  block content %}
-
-<div id="tree" class="tree"></div>
+<div id="tree"></div>
 
 <script type="text/javascript" src="{% static 'js/generateTree.js' %}"></script>
 

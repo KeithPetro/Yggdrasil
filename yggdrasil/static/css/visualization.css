@@ -1,25 +1,17 @@
-.linage {
-    fill: none;
-    stroke: #000;
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
 }
-.marriage {
-    fill: none;
-    stroke: black;
+
+.node text {
+  font: 12px sans-serif;
 }
-.man {
-    background-color: lightblue;
-		border-style: solid;
-		border-width: 1px;
-		box-sizing: border-box;
-}
-.woman {
-		background-color: pink;
-		border-style: solid;
-		border-width: 1px;
-		box-sizing: border-box;
-}
-.emphasis{
-		font-style: italic;
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
 }
 p {
 	padding:0;
