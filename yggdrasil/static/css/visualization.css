@@ -3,11 +3,6 @@
   stroke: steelblue;
   stroke-width: 3px;
 }
-
-.node text {
-  font: 12px sans-serif;
-}
-
 .link {
   fill: none;
   stroke: #ccc;
@@ -28,7 +23,7 @@ svg {
 /*
 TODO: FIX THIS SHIT ITS GROSS AF
 */
-.tree{
+#tree{
 	width: 100%;
 	height: calc(100vh - 68px);
 }

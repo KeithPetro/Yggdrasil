@@ -19,9 +19,12 @@ var margin = { top: 20, right: 90, bottom: 30, left: 90 },
 // append the svg object to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#tree").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
+    .call(d3.zoom().on("zoom", function () {
+       svg.attr("transform", d3.event.transform)
+    }))
     .append("g")
     .attr("transform", "translate(" +
         margin.left + "," + margin.top + ")");
