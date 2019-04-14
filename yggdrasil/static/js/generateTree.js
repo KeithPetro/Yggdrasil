@@ -1,51 +1,23 @@
 const dTree = window.dTree;
 
 var treeData = [{
-    "name": "Niclas Superlongsurname",
+    "name": "Father",
     "class": "man",
     "textClass": "emphasis",
     "marriages": [{
         "spouse": {
-            "name": "Iliana",
+            "name": "Mother",
             "class": "woman",
-            "extra": {
-                "nickname": "Illi"
-            }
         },
         "children": [{
-            "name": "James",
+            "name": "Son 1",
             "class": "man",
-            "marriages": [{
-                "spouse": {
-                    "name": "Alexandra",
-                    "class": "woman"
-                },
-                "children": [{
-                    "name": "Eric",
-                    "class": "man",
-                    "marriages": [{
-                        "spouse": {
-                            "name": "Eva",
-                            "class": "woman"
-                        }
-                    }]
-                }, {
-                    "name": "Jane",
-                    "class": "woman"
-                }, {
-                    "name": "Jasper",
-                    "class": "man"
-                }, {
-                    "name": "Emma",
-                    "class": "woman"
-                }, {
-                    "name": "Julia",
-                    "class": "woman"
-                }, {
-                    "name": "Jessica",
-                    "class": "woman"
-                }]
-            }]
+        }, {
+            "name": "Son 2",
+            "class": "man",
+        }, {
+            "name": "Daughter 1",
+            "class": "woman",
         }]
     }]
 }]
