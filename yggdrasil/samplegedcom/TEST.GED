@@ -1,76 +1,396 @@
 0 HEAD
-1 SOUR FTW
-2 VERS Family Tree Maker 2005 (12.0.345 SP1) August 20, 2004
-2 NAME Family Tree Maker 2005 for Windows
-2 CORP MyFamily.com, Inc.
-3 ADDR 360 W 4800 N
-4 CONT Provo, UT 84604
-3 PHON (801) 705-7000
-1 DEST FTW
-1 DATE 10 JUN 2007
-1 CHAR ANSI
+1 SOUR AHN
+2 VERS 2.99g
+2 NAME Ahnenblatt
+2 CORP Dirk Boettcher
+1 DATE 15 MAR 2019
+2 TIME 19:34:53
 1 SUBM @SUBM@
-1 FILE C:\Documents and Settings\Home PC\My Documents\FTM\sample1.GED
+1 FILE Musterstammbaum.ged
 1 GEDC
-2 VERS 5.5
+2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
-1 _SCHEMA
-2 INDI,br> 3 _FA1
-0 @SUBM@ SUBM
-1 NAME Glen philip Jones
-1 ADDR uk
-0 @I185@ INDI
-1 NAME John Cheetham /Goulson/
-1 SEX M,
+1 CHAR UTF-8
+1 _NAVM 1
+2 _NAVI @1@
+1 _HOME @1@
+0 @1@ INDI
+1 _UID 4AFC62659C6D40708AE17246F3579AB5828B
+1 NAME Max /Mustermann/
+2 SURN Mustermann
+2 GIVN Max
+1 SEX M
 1 BIRT
-2 DATE 1862
-2 PLAC Lincoln, Lincolnshire
-1 FAMS @F1@
-1 NOTE @NI185@
-0 @NI185@ NOTE
-1 CONC Birth Ref 7a 536 Q4 1862 Lincoln,
-1 CONT
-1 CONT Census Images Held
-1 CONT 1871
-1 CONT 1881
-1 CONT 1891
-1 CONT 1901
-1 CONT
-1 CONT The 1909 Kellys directory shows John Cheetham Gouslon, Grocer of 108 Hews
-1 CONC on Road, Lincoln.
-1 CONT The 1919 Kellys Directory shows the private residence of John to be numb
-1 CONC er 22 Hewson Road
-1 CONT
-0 @I253@ INDI
-1 NAME Louisa /Harrison/
-1 SEX F
+2 DATE 1 JAN 1980
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 15 MAR 2019
+3 TIME 19:34:31
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F10@
+1 FAMC @F8@
+0 @2@ INDI
+1 _UID 0D3458099F444410BD8CA4227EAE09789583
+1 FAMS @F10@
+1 NAME Florian /Mustertyp/
+2 SURN Mustertyp
+2 GIVN Florian
+1 SEX M
 1 BIRT
-2 DATE 1856
-2 PLAC Lincoln, Lincolnshire
-1 FAMS @F1@
-0 @I254@ INDI
-1 NAME Edith Mary L /Goulson/
-1 SEX F
+2 DATE 27 JAN 1982
+2 PLAC Musterhausen
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:29:51
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMC @F11@
+0 @3@ INDI
+1 _UID DD6E84DA500F40A48AC6830853A0DD841B93
+1 FAMS @F8@
+1 NAME Gudwin /Mustermann/
+2 SURN Mustermann
+2 GIVN Gudwin
+1 SEX M
 1 BIRT
-2 DATE 1895
-2 PLAC Lincoln, Lincolnshire
+2 DATE 25 OCT 1950
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 15 MAR 2019
+3 TIME 19:34:36
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
 1 FAMC @F1@
-1 NOTE @NI254@
-0 @NI254@ NOTE
-1 CONC Birth Ref
-1 CONT Lincoln vol 7a pg 551 Q1 1895
+0 @4@ INDI
+1 _UID 41299385739D48DCB35818D7DB79A7C26D9B
+1 NAME Gisela /Musterfrau/
+2 SURN Musterfrau
+2 GIVN Gisela
+1 SEX F
+1 BIRT
+2 DATE 14 SEP 1954
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:34:13
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F8@
+1 FAMC @F9@
+0 @5@ INDI
+1 _UID 874E1342BCC74B40A6260804BD542079BA18
+1 FAMS @F1@
+1 FAMS @F7@
+1 NAME Theodor /Mustermann/
+2 SURN Mustermann
+2 GIVN Theodor
+1 SEX M
+1 BIRT
+2 DATE 5 AUG 1930
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 15 MAR 2019
+3 TIME 19:34:31
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+0 @6@ INDI
+1 _UID A7E0D8AB419A415A8AE0B164C9397E2CABEE
+1 NAME Anna /Musterberg/
+2 SURN Musterberg
+2 GIVN Anna
+1 SEX F
+1 BIRT
+2 DATE 9 SEP 1932
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:44:48
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 26 OCT 1960
+2 PLAC Musterdorf
+1 FAMS @F1@
+1 FAMC @F4@
+0 @7@ INDI
+1 _UID 2345F735623243F19D6B1DA20F048F1BE071
+1 NAME Heidrun /Musterfrau/
+2 SURN Musterfrau
+2 GIVN Heidrun
+1 SEX F
+1 BIRT
+2 DATE 9 DEC 1935
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:34:17
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F9@
+0 @8@ INDI
+1 _UID 80FD74DB1119457DB01358D0C86A6A609FF7
+1 FAMS @F9@
+1 NAME Alwin /Musterstern/
+2 SURN Musterstern
+2 GIVN Alwin
+1 SEX M
+1 BIRT
+2 DATE 6 FEB 1925
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 15 MAR 2019
+3 TIME 19:32:09
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+0 @9@ INDI
+1 _UID 768A3A5E01584861A566E0F60E66A1730394
+1 FAMS @F11@
+1 NAME August /Mustertyp/
+2 SURN Mustertyp
+2 GIVN August
+1 SEX M
+1 BIRT
+2 DATE 17 JAN 1954
+2 PLAC Musterhausen
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:36:05
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMC @F3@
+0 @10@ INDI
+1 _UID A7CAE71B3BF840F9A313340E17B0041DBFA0
+1 NAME Anneliese /Musterstift/
+2 SURN Musterstift
+2 GIVN Anneliese
+1 SEX F
+1 BIRT
+2 DATE 26 SEP 1960
+2 PLAC Musterhausen
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:45:41
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F11@
+1 FAMC @F6@
+0 @11@ INDI
+1 _UID 4D043CD27DC14A5FA77316D9397EA46D1791
+1 FAMS @F3@
+1 NAME August /Mustertyp/
+2 SURN Mustertyp
+2 GIVN August
+1 SEX M
+1 BIRT
+2 DATE 7 JUL 1931
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:38:05
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+0 @12@ INDI
+1 _UID 6BAEBB406B64428F84B3F95BE3401635AD96
+1 NAME Bertha /Musterberg/
+2 SURN Musterberg
+2 GIVN Bertha
+1 SEX F
+1 BIRT
+2 DATE 29 JAN 1934
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:40:09
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F3@
+1 FAMC @F2@
+0 @13@ INDI
+1 _UID 22C93CE9E8C5466D88CE4C8BC4C37CE78785
+1 NAME Johann /Musterberg/
+2 SURN Musterberg
+2 GIVN Johann
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1900
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:39:13
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 27 FEB 1972
+2 PLAC Musterdorf
+1 FAMS @F4@
+1 FAMC @F5@
+0 @14@ INDI
+1 _UID 4E97FC61322045718B3DEB1F1AC76FFE6A8A
+1 FAMS @F4@
+1 NAME Johanna /Musterfrau/
+2 SURN Musterfrau
+2 GIVN Johanna
+1 SEX F
+1 BIRT
+2 DATE 7 FEB 1900
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:39:42
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 29 AUG 1985
+2 PLAC Musterstadt
+0 @15@ INDI
+1 _UID 096BDC0CBD0A4780812442654FFBAB16412B
+1 NAME August /Musterberg/
+2 SURN Musterberg
+2 GIVN August
+1 SEX M
+1 BIRT
+2 DATE 28 FEB 1898
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:41:29
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 9 SEP 1956
+2 PLAC Musterdorf
+1 FAMS @F2@
+1 FAMC @F5@
+0 @16@ INDI
+1 _UID 775D059819D1426F8224EC1748FDF5E4D36F
+1 FAMS @F2@
+1 NAME Johanna /Mustereisen/
+2 SURN Mustereisen
+2 GIVN Johanna
+1 SEX F
+1 BIRT
+2 DATE 11 NOV 1899
+2 PLAC Musterstadt
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:41:42
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 28 APR 1958
+2 PLAC Musterdorf
+0 @17@ INDI
+1 _UID DC15ED303616423DBE580F181A5BF18D09A6
+1 NAME Theodor /Musterberg/
+2 SURN Musterberg
+2 GIVN Theodor
+1 SEX M
+1 BIRT
+2 DATE 26 NOV 1872
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:42:52
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 17 NOV 1939
+2 PLAC Musterstadt
+1 FAMS @F5@
+0 @18@ INDI
+1 _UID 8B55DD693E6F427B895B0CF73772DA3731A7
+1 FAMS @F5@
+1 NAME Sophie /Musterstern/
+2 SURN Musterstern
+2 GIVN Sophie
+1 SEX F
+1 BIRT
+2 DATE 1 JAN 1877
+2 PLAC Musterhausen
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:42:32
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 15 MAY 1910
+2 PLAC Musterdorf
+0 @19@ INDI
+1 _UID 25491E5CE1474358AFEC39A73DAF94B45A98
+1 FAMS @F6@
+1 NAME Johann /Musterstift/
+2 SURN Musterstift
+2 GIVN Johann
+1 SEX M
+1 BIRT
+2 DATE 29 SEP 1930
+2 PLAC Musterhausen
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:44:36
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 DEAT
+2 DATE 1961
+2 PLAC Musterdorf
+0 @20@ INDI
+1 _UID 3D34CBD909B547C1B2A3040B6D1E3DB6BD4F
+1 NAME Anneliese /Mustereisen/
+2 SURN Mustereisen
+2 GIVN Anneliese
+1 SEX F
+1 BIRT
+2 DATE 28 JAN 1930
+2 PLAC Musterdorf
+1 CHAN
+2 DATE 18 DEC 2018
+3 TIME 19:45:30
+1 SOUR Stammbaum der Familie Mustermann und Mustertyp, 2018
+1 FAMS @F6@
+1 FAMS @F7@
 0 @F1@ FAM
-1 HUSB @I185@
-1 WIFE @I253@
-1 CHIL @I254@
-2 _FREL Natural
-2 _MREL Natural
+1 HUSB @5@
+1 WIFE @6@
+1 CHIL @3@
+0 @F2@ FAM
+1 HUSB @15@
+1 WIFE @16@
+1 CHIL @12@
+0 @F3@ FAM
+1 HUSB @11@
+1 WIFE @12@
+1 CHIL @9@
+0 @F4@ FAM
+1 HUSB @13@
+1 WIFE @14@
+1 CHIL @6@
+0 @F5@ FAM
+1 HUSB @17@
+1 WIFE @18@
+1 CHIL @15@
+1 CHIL @13@
+0 @F6@ FAM
+1 HUSB @19@
+1 WIFE @20@
 1 MARR
-2 DATE 1890
-2 PLAC Lincoln,Lincolnshire
-1 REFN 8915
-1 NOTE @NF1@
-0 @NF1@ NOTE
-1 CONC Ref
-1 CONT Lincoln 7a 907 Q3 1890
+2 DATE 11 SEP 1959
+2 PLAC Musterhausen
+1 CHIL @10@
+0 @F7@ FAM
+1 HUSB @5@
+1 WIFE @20@
+1 MARR
+2 DATE 11 NOV 1977
+2 PLAC Musterhausen
+0 @F8@ FAM
+1 HUSB @3@
+1 WIFE @4@
+1 MARR
+2 DATE 7 JUL 1975
+2 PLAC Musterstadt
+1 CHIL @1@
+0 @F9@ FAM
+1 HUSB @8@
+1 WIFE @7@
+1 _STAT NOT MARRIED
+1 _MARR N
+1 CHIL @4@
+0 @F10@ FAM
+1 HUSB @1@
+1 WIFE @2@
+1 _TYPE same-sex
+1 MARR
+2 DATE 18 DEC 2018
+2 PLAC Musterstadt
+0 @F11@ FAM
+1 HUSB @9@
+1 WIFE @10@
+1 MARR
+2 DATE 1 NOV 1980
+2 PLAC Musterhausen
+1 CHIL @2@
+0 @SUBM@ SUBM
+1 NAME Mustermann
 0 TRLR
